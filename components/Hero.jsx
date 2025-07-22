@@ -64,7 +64,7 @@ const Hero = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col md:flex-row-reverse items-center md:items-start md:justify-center gap-10 md:gap-20"
+          className="flex flex-col md:flex-row-reverse items-center md:items-start md:justify-center gap-10"
         >
           
           {/* Intro Text Side */}
@@ -96,7 +96,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg text-gray-400 max-w-2xl mx-auto"
             >
-             Passionate about CSE, especially DSA, Python, and Frontend Development. ECE background but focused on building interactive web apps and solving coding challenges.
+             ECE graduate with a strong interest in core electronics and a growing passion for Computer Science, focusing on DSA, Python, and Frontend Development.
             </motion.p>
           </motion.div>
 
