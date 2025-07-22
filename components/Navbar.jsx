@@ -21,7 +21,6 @@ const Navbar = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
-    { name: 'Education', href: '#education' },
     { name: 'Contact', href: '#contact' }
   ]
 
@@ -52,7 +51,7 @@ const Navbar = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6 items-center">
             {navItems.map((item) => (
               <motion.button
                 key={item.name}

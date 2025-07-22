@@ -1,6 +1,8 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Download, Mail, Github, Linkedin } from 'lucide-react'
+import { Download, Mail, Github,  } from 'lucide-react'
+import { SiLeetcode } from '@icons-pack/react-simple-icons';
+import Image from 'next/image';
 
 const Hero = () => {
   const containerVariants = {
@@ -57,14 +59,16 @@ const Hero = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-2 lg:px-8 mt-20 md:mt-0">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="space-y-8"
+          className="flex flex-col md:flex-row-reverse items-center md:items-start md:justify-center gap-10 md:gap-20"
         >
-          <motion.div variants={itemVariants} className="space-y-4">
+          
+          {/* Intro Text Side */}
+          <motion.div variants={itemVariants} className="space-y-4 flex-1 text-center md:text-left">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -83,7 +87,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
             >
-              Electronics & Communication Engineering Student
+              Electronics & Communication Engineering @ Thapar University
             </motion.p>
             
             <motion.p
@@ -92,8 +96,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg text-gray-400 max-w-2xl mx-auto"
             >
-              Passionate about embedded systems, IoT, and VLSI design. 
-              Creating innovative solutions through technology.
+             Passionate about CSE, especially DSA, Python, and Frontend Development. ECE background but focused on building interactive web apps and solving coding challenges.
             </motion.p>
           </motion.div>
 
@@ -122,7 +125,7 @@ const Hero = () => {
 
           <motion.div
             variants={itemVariants}
-            className="flex justify-center space-x-6 pt-8"
+            className="flex justify-center space-x-6"
           >
             <motion.a
               whileHover={{ scale: 1.1, y: -5 }}
@@ -150,7 +153,7 @@ const Hero = () => {
               href="#"
               className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
             >
-              <Linkedin size={28} />
+              <SiLeetcode  size={28} />
             </motion.a>
           </motion.div>
         </motion.div>

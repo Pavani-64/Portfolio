@@ -108,28 +108,6 @@ const Contact = () => {
               ))}
             </div>
 
-            <div>
-              <h4 className="text-xl font-semibold text-white mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <motion.a
-                    key={social.name}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    whileTap={{ scale: 0.95 }}
-                    className={`p-3 bg-gray-800 rounded-lg text-gray-400 transition-all duration-200 border border-gray-700 hover:border-blue-500 ${social.color}`}
-                  >
-                    {social.icon}
-                  </motion.a>
-                ))}
-              </div>
-            </div>
           </motion.div>
 
           {/* Contact Form */}

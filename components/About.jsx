@@ -19,7 +19,7 @@ const About = () => {
     {
       icon: <Trophy className="w-6 h-6" />,
       title: "Sports Achievements",
-      description: "State-Level Kabaddi Player and Regional-Level Runner",
+      description: "Regional-Level Kabaddi Player",
       color: "from-green-500 to-emerald-500"
     }
   ]
@@ -27,7 +27,7 @@ const About = () => {
   const hobbies = [
     { name: "Painting", icon: "🎨" },
     { name: "Cooking", icon: "👨‍🍳" },
-    { name: "Gaming", icon: "🎮" },
+    { name: "Cycling", icon: "🚴" },
     { name: "Craft Working", icon: "🛠️" }
   ]
 
@@ -63,21 +63,16 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl font-bold text-white mb-6">
-              Electronics & Communication Engineering Student
+              Computer Science Enthusiast & ECE Student
             </h3>
             
             <div className="space-y-4 text-gray-300">
               <p className="text-lg leading-relaxed">
-                I am a passionate Electronics & Communication Engineering student at Thapar University, 
-                specializing in embedded systems, IoT, and VLSI design. With a strong foundation in 
-                both hardware and software development, I enjoy creating innovative solutions that 
-                bridge the gap between technology and real-world applications.
+                I am a passionate Computer Science enthusiast currently pursuing a B.E. in Electronics & Communication Engineering at Thapar University. My primary interests lie in Data Structures & Algorithms, frontend development, and Python programming. I enjoy building interactive web applications and solving challenging coding problems. While my academic background is in ECE, my career focus is on software development and technology.
               </p>
               
               <p className="text-lg leading-relaxed">
-                My journey in technology has been driven by curiosity and a desire to solve complex 
-                problems. From designing PCB circuits to developing IoT-based systems, I've gained 
-                hands-on experience in various aspects of electronics and communication engineering.
+                My journey in technology has been driven by curiosity and a desire to solve complex problems. From designing PCB circuits to developing web and Python-based projects.
               </p>
             </div>
 
