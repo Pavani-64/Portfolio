@@ -15,8 +15,8 @@ const Projects = () => {
         "Live Stats & Receipts – Real-time vote count, winner declaration, and timestamped vote receipts."
       ],
       technologies: ["C++"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/Pavani-64/Voting-System",
+      demo: null,
       icon: <Code className="w-8 h-8" />,
       color: "from-green-500 to-blue-500"
     },
@@ -30,8 +30,8 @@ const Projects = () => {
         "Engaging & Responsive UI – Modern, glassmorphic design with smooth animations"
       ],
       technologies: ["JavaScript", "CSS3", "HTML5"],
-      github: "https://github.com/Pavani-64",
-      demo: "#",
+      github: "https://github.com/Pavani-64/SpeedTyper",
+      demo: "https://pavani-64.github.io/SpeedTyper/",
       icon: <Monitor className="w-8 h-8" />,
       color: "from-blue-500 to-cyan-500"
     },
@@ -45,8 +45,8 @@ const Projects = () => {
         "Focus on clean, efficient algorithms"
       ],
       technologies: ["C++", "Algorithms"],
-      github: "https://github.com/Pavani-64/DSA-practice",
-      demo: "#",
+      github: null,
+        demo: null,
       icon: <Code className="w-8 h-8" />,
       color: "from-purple-500 to-pink-500"
     }
@@ -64,8 +64,6 @@ const Projects = () => {
         "Beginner-friendly breadboard project"
       ],
       technologies: ["ESP32", "Flame Sensor", "Buzzer", "LED", "Resistors", "Breadboard"],
-      github: "#",
-      demo: "#",
       icon: <Zap className="w-8 h-8" />,
       color: "from-yellow-500 to-orange-500"
     },
@@ -87,8 +85,6 @@ const Projects = () => {
         "Microcontroller (Arduino/ESP32)",
         "Rain Sensor"
       ],
-      github: "#",
-      demo: "#",
       icon: <Cpu className="w-8 h-8" />,
       color: "from-green-700 to-blue-400"
     },
@@ -102,8 +98,6 @@ const Projects = () => {
         "Edge Monitoring & Alerts – Enables real-time fire alerts in off-grid locations without dependence on external power sources."
       ],
       technologies: ["RF Energy Harvesting", "STM32", "RAK3172", "LoRa", "Sensors"],
-      github: "#",
-      demo: "#",
       icon: <Zap className="w-8 h-8" />,
       color: "from-orange-500 to-red-500"
     },
@@ -117,8 +111,6 @@ const Projects = () => {
         "Real-time Data Processing"
       ],
       technologies: ["IoT", "Sensors", "Embedded Systems"],
-      github: "#",
-      demo: "#",
       icon: <Code className="w-8 h-8" />,
       color: "from-purple-500 to-pink-500"
     }
@@ -205,29 +197,33 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors duration-200"
-                  >
-                    <Github size={16} />
-                    View Code
-                  </motion.a>
+                  {project.github && (
+                   <motion.a
+                   whileHover={{ scale: 1.05 }}
+                   whileTap={{ scale: 0.95 }}
+                   href={project.github}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors duration-200"
+                 >
+                   <Github size={16} />
+                   View Code
+                 </motion.a> 
+                  )}
                   
-                  <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </motion.a>
+                  {project.demo && (
+                   <motion.a
+                   whileHover={{ scale: 1.05 }}
+                   whileTap={{ scale: 0.95 }}
+                   href={project.demo}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200"
+                 >
+                   <ExternalLink size={16} />
+                   Live Demo
+                 </motion.a> 
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -298,31 +294,6 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors duration-200"
-                  >
-                    <Github size={16} />
-                    View Code
-                  </motion.a>
-                  
-                  <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </motion.a>
-                </div>
               </div>
             </motion.div>
           ))}

@@ -104,14 +104,15 @@ const Hero = () => {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <motion.button
+            <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              href='https://drive.google.com/file/d/1OdP_7hIONqQwbKwhDSAF60Kh_ewaviCM/view?usp=sharing'
               className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg"
             >
               <Download size={20} />
               Download Resume
-            </motion.button>
+            </motion.a>
             
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -150,7 +151,7 @@ const Hero = () => {
             <motion.a
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              href="#"
+              href="https://leetcode.com/u/pavani_6408/"
               className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
             >
               <SiLeetcode  size={28} />
