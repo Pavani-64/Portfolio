@@ -96,7 +96,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg text-gray-400 max-w-2xl mx-auto"
             >
-             ECE graduate with a strong interest in core electronics and a growing passion for Computer Science, focusing on DSA, Python, and Frontend Development.
+             ECE student with a strong interest in core electronics and a growing passion for Computer Science, focusing on DSA, Python, and Frontend Development.
             </motion.p>
           </motion.div>
 
